@@ -14,30 +14,33 @@
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
+### Make directory and clone current repository
+
+```bash
+mkdir mcp-client-deepseek
+git clone git@github.com:hedon-ai-road/mcp-client-deepseek.git
+```
+
+### Install the MCP Server `weather`
+
+```bash
+git clone git@github.com:hedon-ai-road/mcp-weather.git
+```
+
 ### Prepare DeepSeek API Key
 
 - Go to [DeepSeek Platform](https://platform.deepseek.com/api_keys)
 - Create a new API key
 - Save the API key to the `.env` file as `DEEPSEEK_API_KEY`
 
-### Make directory and clone current repository
-
 ```bash
-mkdir mcp-client && cd mcp-client
-git clone git@github.com:hedon-ai-road/mcp-client.git
-```
-
-### Install the MCP Server `weather`
-
-```bash
-cd ..
-git clone git@github.com:hedon-ai-road/mcp-weather.git
+echo "DEEPSEEK_API_KEY=<your_api_key>" >> .env
 ```
 
 ### Run the client
 
 ```bash
-cd mcp-client
+cd mcp-client-deepseek
 uv run client.py ../mcp-weather/weather.py
 ```
 
@@ -96,6 +99,4 @@ Here’s a concise summary of the weather in Los Angeles (LA) for today and the 
 - Mild temperatures, with lows in the 50s and highs in the mid-60s.
 
 Would you like hourly details or extended forecasts?
-
-Query:
 ```
