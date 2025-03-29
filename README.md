@@ -17,7 +17,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ### Make directory and clone current repository
 
 ```bash
-mkdir mcp-client-deepseek
+mkdir mcp-client-demo && cd mcp-client-demo
 git clone git@github.com:hedon-ai-road/mcp-client-deepseek.git
 ```
 
@@ -40,6 +40,7 @@ echo "DEEPSEEK_API_KEY=<your_api_key>" >> .env
 ### Run the client
 
 ```bash
+# in mcp-client-demo directory
 cd mcp-client-deepseek
 uv run client.py ../mcp-weather/weather.py
 ```
