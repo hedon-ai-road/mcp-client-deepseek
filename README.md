@@ -47,6 +47,10 @@ uv run client.py ../mcp-weather/weather.py
 
 ### Ask the weather
 
+```shell
+Query: What's the weather in LA today?
+```
+
 The output may look like this:
 
 ```shell
