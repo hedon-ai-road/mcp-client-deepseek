@@ -1,5 +1,9 @@
 # MCP Client with DeepSeek
 
+## Architecture
+
+![MCP Architecture](./assets/mcp-architecture.png)
+
 ## Requirements
 
 - Python 3.10+
